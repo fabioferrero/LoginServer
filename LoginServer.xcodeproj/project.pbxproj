@@ -10,6 +10,8 @@
 		B4F8975B24853AFE007AA819 /* LoginServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F8975124853AFE007AA819 /* LoginServer.framework */; };
 		B4F8976C24853BAA007AA819 /* LoginServer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B4F8976B24853BAA007AA819 /* LoginServer.podspec */; };
 		B4F8976E24853D28007AA819 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B4F8976D24853D28007AA819 /* LICENSE */; };
+		B4F8977024854246007AA819 /* LoginServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8976F24854246007AA819 /* LoginServer.swift */; };
+		B4F897722485425E007AA819 /* LoginServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F897712485425E007AA819 /* LoginServerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B4F8976124853AFE007AA819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F8976B24853BAA007AA819 /* LoginServer.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = LoginServer.podspec; sourceTree = SOURCE_ROOT; };
 		B4F8976D24853D28007AA819 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B4F8976F24854246007AA819 /* LoginServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServer.swift; sourceTree = "<group>"; };
+		B4F897712485425E007AA819 /* LoginServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		B4F8975324853AFE007AA819 /* LoginServer */ = {
 			isa = PBXGroup;
 			children = (
+				B4F8976F24854246007AA819 /* LoginServer.swift */,
 				B4F8975524853AFE007AA819 /* Info.plist */,
 			);
 			path = LoginServer;
@@ -81,6 +86,7 @@
 		B4F8975E24853AFE007AA819 /* LoginServerTests */ = {
 			isa = PBXGroup;
 			children = (
+				B4F897712485425E007AA819 /* LoginServerTests.swift */,
 				B4F8976124853AFE007AA819 /* Info.plist */,
 			);
 			path = LoginServerTests;
@@ -147,9 +153,11 @@
 				TargetAttributes = {
 					B4F8975024853AFE007AA819 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					B4F8975924853AFE007AA819 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -196,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F8977024854246007AA819 /* LoginServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F897722485425E007AA819 /* LoginServerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +350,7 @@
 		B4F8976624853AFE007AA819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SGM73ULJLG;
@@ -358,6 +369,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -366,6 +378,7 @@
 		B4F8976724853AFE007AA819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SGM73ULJLG;
@@ -392,6 +405,8 @@
 		B4F8976924853AFE007AA819 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SGM73ULJLG;
 				INFOPLIST_FILE = LoginServerTests/Info.plist;
@@ -402,6 +417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ircit.LoginServerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,6 +426,8 @@
 		B4F8976A24853AFE007AA819 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SGM73ULJLG;
 				INFOPLIST_FILE = LoginServerTests/Info.plist;
