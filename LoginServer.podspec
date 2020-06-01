@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "LoginServer"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Small module that helps create a simple testing login flow"
 
   spec.description  = "LoginServer is a small module that helps Training Devs to create a simple testing login flow"
